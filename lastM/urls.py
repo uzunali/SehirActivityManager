@@ -12,7 +12,8 @@ urlpatterns = patterns('',
         (r'^home',include('myapp.urls')),
         #(r'^$', 'myapp.views.home'),
         (r'^admin/', include(admin.site.urls)),
-
+        (r'^club','myapp.views.club'),
+        (r'^about','myapp.views.about'),
 
 
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
