@@ -25,5 +25,6 @@ class AddActivity(models.Model):
 class EntryAdmin(admin.ModelAdmin):
     list_display = ["creator", "Time", "Activity_Name", "Speaker"]
     list_filter = ["creator"]
+    info=["explanention"]
 
 
